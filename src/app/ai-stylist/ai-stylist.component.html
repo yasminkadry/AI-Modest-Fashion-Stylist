@@ -1,0 +1,88 @@
+<app-header></app-header>
+<!-- AI Stylist - Outfit Selection Page -->
+<div class="container mt-2 mb-3">
+    <!-- Title & Description -->
+    <h1 class="text-center mb-4">AI-Powered Stylist</h1>
+    <p class="text-center lead">Get personalized modest outfit recommendations based on your preferences.</p>
+  
+    <!-- AI Stylist - Upload Wardrobe Section -->
+    <div class="mt-5 p-4 card ">
+      <h3 class="mb-3">Upload Your Wardrobe</h3>
+      <p>Manage your wardrobe digitally and get personalized outfit suggestions.</p>
+      <form>
+        <div class="mb-3">
+          <label for="wardrobeUpload" class="form-label">Upload Clothing Items</label>
+          <input type="file" class="form-control" id="wardrobeUpload" multiple>
+        </div>
+        <button class="btn btn-primary w-100" type="button">Upload</button>
+      </form>
+  
+      <!-- User's Closet Display -->
+      <div class="row mt-4" id="wardrobeItems">
+        <!-- Example Clothing Item Card -->
+        <div class="col-md-4">
+          <div class="card  wardrobe-card">
+            <img src="wardrobe.png" class="card-img-top" alt="Clothing Item">
+            <div class="card-body">
+              <h5 class="card-title">Your wardrobe</h5>
+              <p class="card-text">A versatile piece for formal and casual occasions.</p>
+              <button class="btn btn-outline-danger">Remove</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- User Input Form -->
+    <div class="card p-4 mt-5 ">
+      <h3 class="mb-3">Choose Your Preferences</h3>
+      <form>
+        <div class="mb-3">
+          <label for="occasion" class="form-label">Select Occasion</label>
+          <select class="form-select" id="occasion">
+            <option value="casual">Casual</option>
+            <option value="formal">Formal</option>
+            <option value="sporty">Sporty</option>
+          </select>
+        </div>
+  
+        <div class="mb-3">
+          <label for="color" class="form-label">Preferred Colors</label>
+          <input type="text" class="form-control" id="color" placeholder="e.g. Black, Blue">
+        </div>
+  
+        <div class="mb-3">
+          <label for="weather" class="form-label">Weather Condition</label>
+          <select class="form-select" id="weather">
+            <option value="hot">Hot</option>
+            <option value="cold">Cold</option>
+            <option value="rainy">Rainy</option>
+          </select>
+        </div>
+  
+        <button class="btn btn-primary w-100" type="button">Get Outfit Suggestions</button>
+      </form>
+    </div>
+  
+    <!-- AI-Generated Outfit Suggestions -->
+    <div class="row mt-5" id="outfits">
+      <!-- Example Outfit Card -->
+      <div class="col-md-4">
+        <div class="card outfit-card">
+          <img src="icon1.jpg" class="card-img-top" alt="Outfit">
+          <div class="card-body">
+            <h5 class="card-title">Elegant Modest Look</h5>
+            <p class="card-text">Perfect for formal occasions with a modern touch.</p>
+            <button class="btn btn-outline-success">Save to Wishlist</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    
+</div>
+
+
+
+
+<app-footer></app-footer>

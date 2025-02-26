@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-lg shadow-sm py-3 ">
+    <div class="container">
+        <a routerLink="/Home"><img src="logo_ - Copy.png " alt="image"></a>
+        <a class="navbar-brand fw-bold" routerLink="Home">LABESNY</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link fw-bold" routerLink="/Home">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fw-bold" routerLink="#" role="button"
+                        data-bs-toggle="dropdown">AI Stylist</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item fw-bold" routerLink="/stylist">Upload Wardrobe</a></li>
+                        <li><a class="dropdown-item fw-bold" routerLink="/stylist">Personalized Recommendations</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fw-bold" routerLink="/shop" role="button"
+                        data-bs-toggle="dropdown">Shop</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item fw-bold" routerLink="/shop">New Arrivals</a></li>
+                        <li><a class="dropdown-item fw-bold" routerLink="/shop">Trending Styles</a></li>
+                    </ul>
+                </li>
+                <!-- <li class="nav-item"><a class="nav-link fw-bold" routerLink="">Blog</a></li> -->
+                <li class="nav-item"><a class="nav-link fw-bold" routerLink="/donate">Donate ♻️</a></li>
+            </ul>
+            <form class="d-flex me-3">
+                <input class="form-control search-bar" type="search" placeholder="Search outfits...">
+                <button class="btn btn-outline-dark ms-2" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <div class="d-flex align-items-center">
+                <a routerLink="" class="position-relative me-3 text-dark">
+                    <i class="fas fa-heart fa-lg"></i>
+                    <span class="badge bg-danger">3</span>
+                </a>
+                <a routerLink="#" class="position-relative me-3 text-dark">
+                    <i class="fas fa-shopping-cart fa-lg"></i>
+                    <span class="badge bg-primary">2</span>
+                </a>
+                <a routerLink="#" class="text-dark"><i class="fas fa-user fa-lg"></i></a>
+            </div>
+        </div>
+    </div>
+</nav>

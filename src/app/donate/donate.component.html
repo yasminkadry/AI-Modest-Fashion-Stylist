@@ -1,0 +1,70 @@
+<app-header></app-header>
+<!-- Donate Page -->
+<div class="container mt-2 mb-3">
+    <h1 class="text-center mb-4">Support Our Mission</h1>
+    <p class="text-center lead ">Help us continue providing AI-powered modest fashion solutions by making a donation.</p>
+  
+    <div class="card p-4">
+      <h3 class="mb-3 text-center">Make a Donation</h3>
+      <form>
+        <div class="mb-3">
+          <label for="donationAmount" class="form-label">Select Donation Amount</label>
+          <select class="form-select" id="donationAmount">
+            <option value="5">$5</option>
+            <option value="10">$10</option>
+            <option value="25">$25</option>
+            <option value="50">$50</option>
+            <option value="100">$100</option>
+            <option value="custom">Custom</option>
+          </select>
+        </div>
+        
+        <div class="mb-3">
+          <label for="customAmount" class="form-label">Enter Custom Amount</label>
+          <input type="number" class="form-control" id="customAmount" placeholder="$0.00">
+        </div>
+  
+        <div class="mb-3">
+          <label for="paymentMethod" class="form-label">Choose Payment Method</label>
+          <select class="form-select" id="paymentMethod">
+            <option value="paypal">PayPal</option>
+            <option value="credit">Credit Card</option>
+            <option value="crypto">Cryptocurrency</option>
+          </select>
+        </div>
+        
+        <button class="btn btn-success w-100" type="button">Donate Now</button>
+      </form>
+    </div>
+  
+    <!-- Donate Clothes Section -->
+    <div class="card p-4 mt-4">
+      <h3 class="mb-3 text-center">Donate Clothes</h3>
+      <p class="text-center">Contribute to our mission by donating your gently used modest clothing.</p>
+      <form>
+        <div class="mb-3">
+          <label for="clothingType" class="form-label">Type of Clothing</label>
+          <input type="text" class="form-control" id="clothingType" placeholder="e.g. Abaya, Hijab, Dress">
+        </div>
+  
+        <div class="mb-3">
+          <label for="condition" class="form-label">Condition of Clothing</label>
+          <select class="form-select" id="condition">
+            <option value="new">New</option>
+            <option value="gently_used">Gently Used</option>
+          </select>
+        </div>
+  
+        <div class="mb-3">
+          <label for="pickupLocation" class="form-label">Pickup/Drop-off Location</label>
+          <input type="text" class="form-control" id="pickupLocation" placeholder="Enter your address or nearest drop-off point">
+        </div>
+        
+        <button class="btn btn-danger w-100 " type="button">Submit Clothing Donation</button>
+      </form>
+    </div>
+  </div>
+
+
+<app-footer></app-footer>
+  

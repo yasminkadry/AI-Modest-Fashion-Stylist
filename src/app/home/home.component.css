@@ -1,0 +1,62 @@
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.animate-text {
+    animation: fadeInUp 1.5s ease-in-out;
+}
+.carousel{
+    background-color: rgba(215, 232, 250, 0.164);
+    border-radius: 20px;
+}
+/* .cont{
+    background-color:#276776;
+
+} */
+.hidden {
+    animation: fadeInUp 1.5s ease-in-out;
+}
+.carousel-inner img {
+    object-fit: cover;
+    height: 500px;
+    width: auto;
+    margin: auto;
+    display: block;
+    
+}
+
+.testimonial {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+.card{
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgb(97, 130, 206);
+    background-color:#63f1f9;
+}
+
+.card:hover {
+    transform: scale(1.05); 
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+  }
+img:hover {
+    filter: brightness(90%);
+    transform: scale(1.03);
+    transition: all 0.3s ease-in-out;
+  }
+:host {
+    display: block;
+    min-height: 100vh;
+    background-image: url("../../../public/background.png"); 
+    background-size: cover;
+    background-position: center;
+    
+  }
+  
+
+  

@@ -1,0 +1,12 @@
+.trend-card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+:host {
+    display: block;
+    min-height: 100vh;
+    background-image: url("../../../public/background.png"); 
+    background-size: cover;
+    background-position: center;
+    
+  }
